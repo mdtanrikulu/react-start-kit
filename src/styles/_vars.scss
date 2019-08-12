@@ -1,2 +1,29 @@
+/**
+ * Tint of given color
+ * @param  {[type]} $color      [description]
+ * @param  {[type]} $percentage [description]
+ * @return {[type]}             [description]
+ *
+ * @usage tint(#6195c5, 40%);
+ */
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/**
+ * Shades of given color
+ * @param  {[type]} $color      [description]
+ * @param  {[type]} $percentage [description]
+ * @return {[type]}             [description]
+ *
+ * @usage shade(#6195c5, 40%);
+ */
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
 $color-primary: #6195c5;
-$color-text: white;
+$color-warning: #EECD86;
+$color-error: #E39183;
+$color-gray: #CED5DE;
+$color-text: tint($color-gray, 80%);

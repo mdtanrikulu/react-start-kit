@@ -15,7 +15,53 @@ export class Home extends Component {
     render() {
         return (
             <div className="container__home">
-                <span onClick={this.handleClick}>Test</span>
+                <section className="section">
+                    <div className="container">
+                        <h1 className="title">Hi</h1>
+                        <h2 className="subtitle">
+                            Simple text here
+                        </h2>
+                        <div className="tabs is-left">
+                            <ul>
+                                <li className="is-active">
+                                    <a>Url</a>
+                                </li>
+                                <li>
+                                    <a>List</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="field">
+                            <p className="control has-icons-left has-icons-right">
+                                <input
+                                    className="input"
+                                    type="url"
+                                    placeholder="URL"
+                                />
+                                <span className="icon is-small is-left">
+                                    <i className="fas fa-link" />
+                                </span>
+                                <span className="icon is-small is-right">
+                                    <i className="fas fa-check" />
+                                </span>
+                            </p>
+                        </div>
+                        <div className="field">
+                            <div className="control">
+                                <textarea
+                                    className="textarea is-medium"
+                                    placeholder="Medium textarea"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="field is-grouped is-grouped-right">
+                            <p className="control">
+                                <a className="button is-primary">Submit</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
             </div>
         );
     }
